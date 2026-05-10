@@ -64,7 +64,7 @@
 
   <div class="info-box">
     <h2>Park Notes Map</h2>
-    <p>Click anywhere on the map to add a note.</p>
+    <p>Click anywhere in the park to add a note.</p>
   </div>
 
   <div id="map"></div>
@@ -73,51 +73,91 @@
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
   <script>
-    // Initialize map
-    const map = L.map('map').setView([44.4268, 26.1025], 16);
 
-    // OpenStreetMap tiles
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; OpenStreetMap contributors'
-    }).addTo(map);
+    // =========================
+    // Initialize Map
+    // =========================
 
-    // Load saved notes
+    const map = L.map('map').setView([44.4356, 26.0848], 17);
+
+    // Carto Voyager Tiles
+    L.tileLayer(
+      'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',
+      {
+        attribution: '&copy; OpenStreetMap contributors & CartoDB',
+        subdomains: 'abcd',
+        maxZoom: 20
+      }
+    ).addTo(map);
+
+
+    // =========================
+    // Local Storage
+    // =========================
+
     let savedNotes = JSON.parse(localStorage.getItem('parkNotes')) || [];
 
-    // Function to save notes
+    // Store markers separately
+    const markers = {};
+
+
+    // =========================
+    // Save Notes
+    // =========================
+
     function saveNotes() {
       localStorage.setItem('parkNotes', JSON.stringify(savedNotes));
     }
 
-    // Function to create marker
+
+    // =========================
+    // Create Marker
+    // =========================
+
     function createMarker(noteData) {
+
       const marker = L.marker([noteData.lat, noteData.lng]).addTo(map);
+
+      markers[noteData.id] = marker;
 
       const popupContent = `
         <div>
           <strong>Note:</strong>
           <p>${noteData.text}</p>
-          <button class="delete-btn" onclick="deleteNote(${noteData.id})">
+
+          <button
+            class="delete-btn"
+            onclick="deleteNote(${noteData.id})"
+          >
             Delete
           </button>
         </div>
       `;
 
       marker.bindPopup(popupContent);
-
-      noteData.marker = marker;
     }
 
-    // Render existing notes
+
+    // =========================
+    // Load Existing Notes
+    // =========================
+
     savedNotes.forEach(note => {
       createMarker(note);
     });
 
-    // Add new note on map click
+
+    // =========================
+    // Add New Note
+    // =========================
+
     map.on('click', function(e) {
+
       const noteText = prompt('Write your note:');
 
-      if (!noteText || noteText.trim() === '') return;
+      if (!noteText || noteText.trim() === '') {
+        return;
+      }
 
       const noteData = {
         id: Date.now(),
@@ -133,21 +173,26 @@
       saveNotes();
     });
 
-    // Delete note
-    window.deleteNote = function(id) {
-      const noteIndex = savedNotes.findIndex(note => note.id === id);
 
-      if (noteIndex === -1) return;
+    // =========================
+    // Delete Note
+    // =========================
+
+    window.deleteNote = function(id) {
 
       // Remove marker from map
-      map.removeLayer(savedNotes[noteIndex].marker);
+      if (markers[id]) {
+        map.removeLayer(markers[id]);
+        delete markers[id];
+      }
 
-      // Remove from array
-      savedNotes.splice(noteIndex, 1);
+      // Remove note from array
+      savedNotes = savedNotes.filter(note => note.id !== id);
 
       // Save updated notes
       saveNotes();
     };
+
   </script>
 
 </body>
