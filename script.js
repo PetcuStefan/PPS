@@ -1,6 +1,9 @@
-import izvor from "./pois/Izvor.js"
+import { locations } from "./locations.js"
 
-const locations = [izvor]
+console.log("SCRIPT IS RUNNING")
+/* ----------------------------- */
+/* ELEMENTS */
+/* ----------------------------- */
 
 const mapContainer = document.getElementById("map-container")
 
@@ -8,9 +11,9 @@ const infoTitle = document.getElementById("info-title")
 const infoImage = document.getElementById("info-image")
 const infoDescription = document.getElementById("info-description")
 
-/* ---------------------------------- */
-/* CLICK COORDS (FOR EDITING) */
-/* ---------------------------------- */
+/* ----------------------------- */
+/* COORDINATE INSPECTOR (CLICK) */
+/* ----------------------------- */
 
 document.addEventListener("click", (e) => {
 
@@ -31,9 +34,9 @@ document.addEventListener("click", (e) => {
   console.log(`x: ${x.toFixed(2)} | y: ${y.toFixed(2)}`)
 })
 
-/* ---------------------------------- */
-/* CREATE MARKERS */
-/* ---------------------------------- */
+/* ----------------------------- */
+/* RENDER MARKERS */
+/* ----------------------------- */
 
 locations.forEach(location => {
 
