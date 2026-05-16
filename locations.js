@@ -18,7 +18,7 @@ export const locations = [
     title: "Aleea Scriitorilor (Rotonda Scriitorilor)",
     x: 39,
     y: 62,
-    image: "images/scriitori.jpeg",
+    image: "images/scriitori.jpg",
     description: `Panteonul de piatră din inima naturii 
 Ansamblul a fost inaugurat în plin Război Mondial (27 iunie 1943), la inițiativa ministrului Ion Petrovici. Adăpostește 12 busturi ale marilor oameni de litere, amplasate în cerc pe postamente de piatră de Muscel. Busturile reprezintă: Mihai Eminescu, Alexandru Odobescu, Titu Maiorescu, Ion Luca Caragiale, George Coșbuc, Ștefan Octavian Iosif, Ion Creangă, Alexandru Vlahuță, Duiliu Zamfirescu, Bogdan Petriceicu Hașdeu, Nicolae Bălcescu și Vasile Alecsandri. O poveste reală spune că în perioada comunistă, bustul lui Titu Maiorescu a fost înlăturat din motive ideologice (fiind considerat „burghez"), fiind reinstalat mult mai târziu. Tot aici se adunau studenții în perioada interbelică pentru a recita poezii.
 • Anul inaugurării: 27 iunie 1943
@@ -58,7 +58,7 @@ Faimoasa terasă de pe malul lacului a fost epicentrul boemei bucureștene. Isto
     title: "Podul mic",
     x: 54,
     y: 44,
-    image: "images/pod_mic.jpeg",
+    image: "images/pod_mic.jpg",
     description: `Locul preferat pentru cărțile poștale romantice 
 Spre deosebire de Podul Mare, Podul Mic a fost gândit inițial ca o structură rustică din bârne de lemn, cu aspect nefinisat. Era fundalul favorit pentru fotografii ambulanți din perioada interbelică, care vindeau fotografii la minut cu bucureșteni ce pozau melancolic privind reflexia apei.
 • Anul amenajării: Prima versiune în 1854 (reînnoite periodic)
@@ -72,7 +72,7 @@ Spre deosebire de Podul Mare, Podul Mic a fost gândit inițial ca o structură 
     title: "Podul mare",
     x: 62,
     y: 61,
-    image: "images/pod_mare.jpeg",
+    image: "images/pod_mare.jpg",
     description: `O replică pariziană din beton deasupra apelor Cișmigiului 
 Podul Mare este un monument de inginerie și estetică. Proiectat de legendarul inginer român Elie Radu, podul este inspirat de peisagistica podurilor din Parcul Buttes-Chaumont din Paris. A fost una dintre primele structuri din beton armat decorativ din capitală, finisată să pară din piatră brută și rezistând impecabil la toate cutremurele mari. În martie 2023, podul a fost reabilitat pentru prima dată în istoria sa de peste 100 de ani.
 • Anul construcției: 1913-1914 
@@ -99,7 +99,7 @@ Ceasul Floral a fost zeci de ani o atracție tehnico-vegetală unică. Bucureșt
     title: "Statuia lui Mihai Eminescu",
     x: 36,
     y: 58,
-    image: "images/eminescu.jpeg",
+    image: "images/eminescu.jpg",
     description: `Efigia geniului tutelar al poeziei românești 
 Bustul din Cișmigiu face parte dintr-un ansamblu monumental de excepție. Legenda spune că în timpul instalării din 1943, autoritățile au cerut ca Eminescu să fie plasat central, însă arhitecții peisagiști au insistat să fie integrat în cerc, alături de ceilalți scriitori, pentru a simboliza armonia și egalitatea spiritelor literare.
 • Anul inaugurării: 1943
@@ -175,7 +175,7 @@ Grădina Italiană este o capodoperă de simetrie vegetală, cu garduri vii din 
     title: "Locul istoric al Monumentului Gheorghe Panu",
     x: 51,
     y: 59,
-    image: "images/panu.jpeg",
+    image: "images/panu.jpg",
     description: `Statuia veșnic vie în istoria parcului 
 Bustul lui Gheorghe Panu (1848-1910), ziaristul și omul politic de origine moldavă, cunoscut și sub numele de „Semănătorul de idei", a fost ridicat în 1912 și dezvelit în 1912 în Parcul Cișmigiu. Statuia, realizată de sculptorul Gheorghe Horvath, o reprezintă pe Gheorghe Panu în postura unui semănător: cu mâna stângă își ține poala hainei și în mâna dreaptă îndepărtată de corp ține „semințele". La baza piedestalului sunt reprezentate în bronz ziarul „Lupta" și principalele lucrări ale sale. Bustul a fost ridicat de ziarul „Adevărul" prin subscripție publică. MONUMENTUL RĂMÂNE ÎN PARC ȘI ESTE ÎNSCRIS ÎN LISTA MONUMENTELOR ISTORICE.
 • Anul historic: 1912 (Bustul ridicat și dezvelit în 1912)
@@ -201,7 +201,7 @@ Spre deosebire de restul parcului, care este romantic (stil englezesc), Grădina
     title: "Monumentul Eroilor Francezi",
     x: 56,
     y: 56,
-    image: "images/eroi.jpeg",
+    image: "images/eroi.jpg",
     description: `Omagiul de marmură adus sacrificiului din tranșee 
 Opus sculptorului Ion Jalea, acest monument este unul dintre cele mai impunătoare monumente din perimetrul parcului. A fost ridicat în memoria ostașilor francezi care au luptat și s-au jertfit pe teritoriul României în Primul Război Mondial. Lucrarea reprezintă un soldat francez căzut pe câmpul de luptă, vegheat de o figură alegorică feminină (o soră de caritate) care se apleacă și îl sărută pe frunte. Statuia impresionează nu doar prin dimensiunile sale sau prin frumusețea artistică, ci și prin povestea din spatele ei. Ion Jalea, autorul operei, a realizat-o cu o singură mână, după ce și-a pierdut brațul stâng la Mărășești, pe front. Pe soclul de piatră se găsesc inscripții în română și franceză: „SOLDAȚILOR FRANȚEI CĂZUȚI PE CÂMPUL DE ONOARE AL PĂMÂNTULUI ROMÂNESC ÎN TIMPUL MARELUI RĂZBOI 1916-1919" și „AUX SOLDATS FRANÇAIS TOMBÉS AU CHAMP D'HONNEUR SUR LE SOL ROUMAIN PENDANT LA GRANDE GUERRE 1916-1919".
 • Anul creării: 1920 (sculptor a realizat-o în París)
@@ -216,7 +216,7 @@ Opus sculptorului Ion Jalea, acest monument este unul dintre cele mai impunătoa
     title: "Monumentul lui Valter Mărăcineanu",
     x: 78,
     y: 46,
-    image: "images/maracineanu.jpeg",
+    image: "images/maracineanu.jpg",
     description: `Eroul independenței de la granița parcului 
 Situat exact la limita de nord-est a parcului, acest monument din bronz îl onorează pe sublocotenentul Valter Mărăcineanu, care a căzut eroic la Grivița în 1877, înfigând drapelul românesc pe redută. El „păzește" una dintre cele mai frumoase și liniștite intrări în Cișmigiu.
 • Anul inaugurării: 1900
@@ -229,7 +229,7 @@ Situat exact la limita de nord-est a parcului, acest monument din bronz îl onor
     title: "Statuia lui Mihail Kogălniceanu",
     x: 26,
     y: 94,
-    image: "images/kogalniceanu.jpeg",
+    image: "images/kogalniceanu.jpg",
     description: `Martorul de bronz care a supraviețuit bombelor din '44 
 Situată în piața circulară de la colțul de sud-vest al parcului, această statuie impunătoare îl arată pe Kogălniceanu într-o atitudine oratorică. O poveste dramatică și reală spune că în timpul bombardamentelor aviației americane din aprilie 1944, o bombă a căzut la doar câțiva metri. Soclul a fost ciuruit de schije, dar statuia a rămas miraculos în picioare.
 • Anul inaugurării: 1936
@@ -242,7 +242,7 @@ Situată în piața circulară de la colțul de sud-vest al parcului, această s
     title: "Intrare Schitu Măgureanu",
     x: 22,
     y: 12,
-    image: "images/schit.jpeg",
+    image: "images/magureanu.webp",
     description: `Poarta istorică ridicată pe moșia călugărilor 
 Grădina Cișmigiu s-a născut parțial pe fostele terenuri ale mănăstirii Schitu Măgureanu (ctitorită la 1756). Legendele urbane menționează că sub această intrare ar exista vechi hrube și tunele secrete folosite de călugări în secolele trecute, care făceau legătura cu Biserica și Palatul Crețulescu.
 • Anul amenajării porții: Cca. 1856
@@ -265,9 +265,9 @@ Grădina Cișmigiu s-a născut parțial pe fostele terenuri ale mănăstirii Sch
   },
   {
     title: "Pajiștea Centrală",
-    x: 67,
-    y: 67,
-    image: "images/pajistea_centrala.jpeg",
+    x: 26,
+    y: 23,
+    image: "images/pajiste.jpeg",
     description: `Covorul verde unde „sergenții" dădeau amenzi usturătoare 
 Astazi ne așezăm relaxați pe iarbă, însă până la jumătatea secolului XX, călcatul pe pajiștea din Cișmigiu era strict interzis, conform rigorilor germane impuse în horticultură. Parcul era păzit de sergenți municipali cu mustăți impunătoare care fluierau strident și aplicau amenzi pe loc oricărui cetățean îndrăzneț care părăsea aleea pietruită.
 • Anul stabilizării peluzei: 1910 (în forma actuală)
