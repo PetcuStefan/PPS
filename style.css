@@ -1,21 +1,32 @@
 body {
   margin: 0;
-  background: #111;
-  overflow: hidden;
   font-family: Arial, sans-serif;
+  overflow: hidden;
 }
+
+/* MAIN LAYOUT */
+
+#app {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* LEFT SIDE - MAP */
 
 #map-container {
   position: relative;
-  width: 100vw;
-  height: 100vh;
-  overflow: auto;
+  width: 70%;
+  height: 100%;
+  background: #111;
 }
 
 #map-image {
-  display: block;
+  position: absolute;
+  inset: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: contain;
 }
 
 /* MARKERS */
@@ -23,39 +34,31 @@ body {
 .marker {
   position: absolute;
   transform: translate(-50%, -50%);
-  font-size: 32px;
+  font-size: 28px;
   cursor: pointer;
-  user-select: none;
+  z-index: 10;
 }
 
-/* POPUP */
+/* RIGHT SIDE - INFO PANEL */
 
-#popup {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  width: 320px;
-
-  transform: translate(-50%, -50%);
-
-  background: white;
-  border-radius: 12px;
+#info-panel {
+  width: 30%;
+  height: 100%;
+  background: #1e1e1e;
+  color: white;
 
   padding: 20px;
+  box-sizing: border-box;
 
-  z-index: 1000;
+  overflow-y: auto;
 }
 
-.hidden {
-  display: none;
-}
-
-#popup img {
+#info-panel img {
   width: 100%;
-  border-radius: 8px;
+  border-radius: 10px;
+  margin-top: 10px;
 }
 
-#close-popup {
-  float: right;
-  cursor: pointer;
+#info-title {
+  margin-top: 0;
 }
